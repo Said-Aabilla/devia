@@ -1,0 +1,64 @@
+Intelligence Artificielle et Machine Learning : Guide Fondamental
+
+## Qu'est-ce que l'Intelligence Artificielle ?
+
+L'intelligence artificielle (IA) est un domaine de l'informatique qui vise à créer des systèmes capables d'effectuer des tâches qui nécessitent normalement l'intelligence humaine. Ces tâches comprennent la reconnaissance vocale, la prise de décision, la traduction linguistique, la perception visuelle et bien d'autres capacités cognitives.
+
+L'IA est divisée en deux grandes catégories : l'IA étroite (ou faible), qui est conçue pour effectuer une tâche spécifique comme jouer aux échecs ou recommander des films, et l'IA générale (ou forte), qui serait capable d'effectuer n'importe quelle tâche intellectuelle qu'un être humain peut accomplir.
+
+## Le Machine Learning
+
+Le machine learning (apprentissage automatique) est une sous-discipline de l'IA qui permet aux systèmes d'apprendre et de s'améliorer à partir de l'expérience sans être explicitement programmés. Il se concentre sur le développement de programmes informatiques qui peuvent accéder aux données et les utiliser pour apprendre par eux-mêmes.
+
+Il existe trois grands types d'apprentissage automatique :
+
+1. L'apprentissage supervisé : Le modèle est entraîné sur un ensemble de données étiquetées, ce qui signifie que chaque exemple d'entraînement est associé à une étiquette de sortie. Des algorithmes comme la régression linéaire, les arbres de décision et les réseaux de neurones profonds appartiennent à cette catégorie.
+
+2. L'apprentissage non supervisé : Le modèle est entraîné sur des données non étiquetées et doit trouver des structures cachées dans les données. Le clustering (regroupement) et la réduction de dimensionnalité sont des exemples de techniques non supervisées.
+
+3. L'apprentissage par renforcement : Le modèle apprend en interagissant avec un environnement et en recevant des récompenses ou des pénalités en fonction de ses actions. C'est la technique utilisée pour entraîner des agents capables de jouer à des jeux complexes comme Go ou des jeux vidéo.
+
+## Le Deep Learning
+
+Le deep learning (apprentissage profond) est une sous-discipline du machine learning qui utilise des réseaux de neurones artificiels avec de nombreuses couches (d'où le terme "profond") pour analyser des données complexes comme des images, du texte ou de l'audio.
+
+Les réseaux de neurones convolutifs (CNN) sont particulièrement efficaces pour la reconnaissance d'images. Ils appliquent des filtres sur les images pour détecter des caractéristiques comme les bords, les formes et les textures.
+
+Les réseaux de neurones récurrents (RNN) et leurs variantes comme les LSTM (Long Short-Term Memory) sont conçus pour traiter des données séquentielles comme le texte ou les séries temporelles.
+
+## Les Transformers et les Grands Modèles de Langage
+
+L'architecture Transformer, introduite en 2017 dans le célèbre article "Attention Is All You Need", a révolutionné le traitement du langage naturel. Elle utilise un mécanisme appelé "attention" qui permet au modèle de se concentrer sur les parties les plus pertinentes de l'entrée lors de la génération de la sortie.
+
+Les grands modèles de langage (LLM pour Large Language Models) comme GPT (Generative Pre-trained Transformer) de OpenAI, BERT de Google, ou Gemini de Google, sont des modèles Transformer entraînés sur d'immenses quantités de texte. Ils sont capables de générer du texte cohérent, de répondre à des questions, de traduire des langues, de résumer des documents et d'effectuer de nombreuses autres tâches linguistiques.
+
+## Le Retrieval-Augmented Generation (RAG)
+
+Le RAG est une technique qui combine la recherche d'informations (retrieval) avec la génération de texte par un LLM. Au lieu de se fier uniquement aux connaissances encodées dans les paramètres du modèle lors de l'entraînement, le RAG permet au modèle d'accéder à une base de connaissances externe et à jour.
+
+Le processus RAG se déroule en deux phases :
+- Phase d'ingestion : Les documents sont découpés en fragments (chunks), convertis en vecteurs (embeddings) et stockés dans une base de données vectorielle.
+- Phase de requête : La question de l'utilisateur est convertie en vecteur, les fragments les plus similaires sont récupérés, puis ces fragments sont fournis au LLM comme contexte pour générer une réponse précise et fondée.
+
+## Les Embeddings et les Bases de Données Vectorielles
+
+Les embeddings sont des représentations numériques (vecteurs) de textes, d'images ou d'autres données. Deux éléments sémantiquement similaires auront des vecteurs proches dans l'espace multidimensionnel. Le modèle all-MiniLM-L6-v2 de Sentence Transformers, par exemple, génère des vecteurs de 384 dimensions.
+
+ChromaDB est une base de données vectorielle open-source qui permet de stocker et de rechercher efficacement des embeddings. Elle supporte des opérations de recherche par similarité cosinus, permettant de trouver rapidement les documents les plus pertinents par rapport à une requête.
+
+## Applications Pratiques de l'IA
+
+L'IA est aujourd'hui utilisée dans de nombreux domaines :
+- La santé : Diagnostic médical assisté par ordinateur, découverte de médicaments, analyse d'images médicales.
+- La finance : Détection de fraude, trading algorithmique, évaluation du risque de crédit.
+- Le transport : Véhicules autonomes, optimisation des itinéraires, maintenance prédictive.
+- L'éducation : Tuteurs intelligents, personnalisation des parcours d'apprentissage.
+- Le commerce : Recommandation de produits, chatbots de service client, optimisation des prix.
+
+## Défis Éthiques et Sociétaux
+
+Le développement rapide de l'IA soulève d'importantes questions éthiques. Le biais algorithmique peut perpétuer ou amplifier des discriminations existantes si les données d'entraînement ne sont pas représentatives. La transparence et l'explicabilité des modèles (souvent appelés "boîtes noires") sont cruciales pour instaurer la confiance.
+
+La question de la protection de la vie privée est centrale lorsque les systèmes d'IA traitent de grandes quantités de données personnelles. De plus, l'automatisation liée à l'IA peut transformer profondément le marché du travail, nécessitant des politiques d'adaptation et de reconversion professionnelle.
+
+La gouvernance de l'IA est un enjeu mondial, avec des initiatives comme le Règlement Européen sur l'IA (AI Act) qui cherche à encadrer l'utilisation de ces technologies pour protéger les droits fondamentaux tout en favorisant l'innovation.
